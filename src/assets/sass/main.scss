@@ -1,8 +1,7 @@
 // Variables
-@import './variables/media';
-@import './variables/color';
-;
-@import './variables/fonts';
+@import './variables/media.scss';
+@import './variables/color.scss';
+@import './variables/fonts.scss';
 
 // Global Style
 @import './global/resets.scss';
@@ -12,14 +11,27 @@
 // Common section
 @import './common/header.scss';
 @import './common/footer.scss';
-@import './common/form.scss';
 // Common section End
 
 // Components
 @import './components/button.scss';
+@import './components/form.scss';
+@import './components/fields.scss';
 // Components End
 
 // Pages Style
 @import './pages/home.scss';
+@import './pages/about.scss';
+@import './pages/services.scss';
+@import './pages/single-services.scss';
+@import './pages/pricing.scss';
+@import './pages/project.scss';
+@import './pages/project-details.scss';
+@import './pages/blog.scss';
+@import './pages/blog-details.scss';
+@import './pages/team.scss';
+@import './pages/team-single.scss';
 @import './pages/contact.scss';
+@import './pages/faq.scss';
+@import './pages/404.scss';
 // Pages Style End
