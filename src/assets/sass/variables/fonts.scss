@@ -1,36 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Red+Hat+Display:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@500&family=Jost:wght@400;500;600&display=swap");
 
-$main-fonts: 'Red Hat Display', sans-serif;
-$sub-fonts: 'Lato', sans-serif;
+// Text-font-families
 
+// font-family: 'DM Serif Display', serif;
+// font-family: 'Jost', sans-serif;
+// font-family: 'Inter', sans-serif;
+
+// Text-variables
+:root {
+  --DM-Serif-Display-ff: "DM Serif Display", serif;
+  --Jost-ff: "Jost", sans-serif;
+  --Inter-ff: "Inter", sans-serif;
+
+  // Global text variables
+  --main-text-font: 400 22px/33px var(--Jost-ff);
+  --header-navigation-font: 500 20px/25px var(--Jost-ff);
+  --page-title-font: 400 70px/87.5px var(--DM-Serif-Display-ff);
+  --big-numbers-font: 400 85px/106.25px var(--Jost-ff);
+  --footer-navigation-block-title-font: 400 25px/21.5px var(--DM-Serif-Display-ff);
+  --footer-navigation-block-text-font: 400 22px/66px var(--Jost-ff);
+  --footer-navigation-copyright-font: 400 22px/33px var(--Jost-ff);
+
+  // Components text variables
+
+  --button-font: 600 18px/22.5px var(--Inter-ff);
+  --read-more-button-font: 600 18px/22.5px var(--Jost-ff);
+  --form-input-font: 400 30px/45px var(--Jost-ff);
+  --input-search-font: 400 22px/33px var(--Jost-ff);
+
+  // Home page text variables
+  --main-home-page-title-font: 400 65px/81.5px var(--DM-Serif-Display-ff);
+  --home-page-subtitle-font: 500 22px/33px var(--Inter-ff);
+  --steps-title-font: 400 25px/31.5px var(--DM-Serif-Display-ff);
+  --we-create-title-font: 400 55px/68.75px var(--DM-Serif-Display-ff);
+  --call-us-tel-font: 700 24px/36px var(--Jost-ff);
+  --call-us-text-font: 500 25px/33px var(--Jost-ff);
+  --thinks-title-font: 400 50px/62.5px var(--DM-Serif-Display-ff);
+  --thinks-name-font: 400 25px/37.5px var(--Jost-ff);
+}
+
+// Text-classes
 .title {
-    font-family: $main-fonts;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 64px;
-    letter-spacing: 0.05em;
-    color: $color-black;
-
-    @media (max-width: $tablet) {
-        font-size: 33px;
-        line-height: 50px;
-    }
-}
-
-.h6 {
-    font-family: $sub-fonts;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 0.1em;
-    color: $color-black;
-}
-
-.h9 {
-    font-family: $sub-fonts;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0.1em;
-    color: $color-black;
 }
