@@ -4,6 +4,9 @@
     gap: 10px;
     background-color: var(--color-CDA274);
     padding: 26px 0;
+    border-radius: 18px;
+    color: var(--color-base-white);
+    font: var(--button-font);
 }
 
 .btn-dark {
@@ -12,4 +15,15 @@
     gap: 10px;
     background-color: var(--color-292F36);
     padding: 26px 0;
+    border-radius: 18px;
+    color: var(--color-base-white);
+    font: var(--button-font);
+}
+
+.btn-read-more {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-4D5053);
+    font: var(--read-more-button-font);
 }
