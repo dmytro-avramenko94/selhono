@@ -1,0 +1,135 @@
+// Hero section
+
+.hero {
+    padding-top: 88px;
+    padding-bottom: 95px;
+}
+
+.hero__container {
+    border-radius: 100px 0 100px 0;
+    background-image: url('../../img/home-page/home-1.1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left -10px;
+    padding-left: 25px;
+    padding-top: 73px;
+    padding-bottom: 345px;
+}
+
+.hero__title {
+    max-width: 700px;
+    color: var(--color-base-white);
+    margin-bottom: 9px;
+    font-family: var(--DM-Serif-Display-ff);
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 81.25px;
+}
+
+.hero__text {
+    max-width: 470px;
+    color: var(--color-base-white);
+    margin-bottom: 28px;
+    font-family: var(--Inter-ff);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+}
+
+// .button__text {
+
+// }
+
+// Hero section END
+
+// Work section 
+
+.work {
+    padding-bottom: 154px;
+}
+
+.work__container {
+
+}
+
+.work-row {
+    display: flex;
+    gap: 42px;
+}
+
+.work-row__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    max-width: 358px;
+}
+
+.work-row__title {
+    color: var(--color-292F36);
+    margin-bottom: 20px;
+    font-family: var(--DM-Serif-Display-ff);
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 31.25px;
+}
+
+.work-row__text {
+    margin-bottom: 52px;
+}
+
+// Work section END
+
+// Create section 
+
+.create {
+    padding-bottom: 194px;
+}
+
+.create__container {
+    position: relative;
+
+    &--image-left {
+        max-width: 653px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &--image-right {
+        max-width: 800px;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.create__title {
+
+}
+
+.create__text {
+
+}
+
+.call-us {
+
+}
+
+.call-us__text-block {
+
+}
+
+.call-us__text-block--number {
+
+}
+
+.call-us__text-block--text {
+
+}
+
+.hero__btn-light {
+
+}
+
+// Create section END
