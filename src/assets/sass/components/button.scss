@@ -1,0 +1,15 @@
+.btn-light {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-CDA274);
+    padding: 26px 0;
+}
+
+.btn-dark {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-292F36);
+    padding: 26px 0;
+}
