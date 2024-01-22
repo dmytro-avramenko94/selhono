@@ -1,0 +1,99 @@
+.about-page {
+    .hero {
+        margin-bottom: 133px;
+
+        &__container {
+            display: flex;
+            align-items: center;
+            gap: 17px;
+            margin: 0 auto;
+            position: relative;
+            max-width: 1920px;
+        }
+
+        &__img {
+            max-height: 356px;
+        }
+
+        &__img:first-child,
+        &__img:nth-child(7) {
+            max-width: 61px;
+        }
+
+        &__img:nth-child(2),
+        &__img:nth-child(6) {
+            max-width: 95px;
+        }
+
+        &__img:nth-child(3),
+        &__img:nth-child(5) {
+            max-width: 148px;
+        }
+
+        &__sub-container {
+            background-image: url(../../img/about/hero-img-04.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 1210px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 356px;
+        }
+
+        &__swiper-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1210px;
+            width: 95%;
+        }
+
+        &__swipe-icon {
+            width: 42px;
+            height: 74px;
+        }
+
+        &__title {
+            font: var(--page-title-font);
+            color: var(--color-base-white);
+            margin-bottom: 25px;
+        }
+
+        &__indicator-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .quotes {
+        margin-bottom: 133px;
+
+        &__container {
+            max-width: 750px;
+            display: flex;
+            flex-direction: column;
+            gap: 34px;
+            text-align: center;
+            border-left: 2px solid var(--color-base-black);
+            border-right: 2px solid var(--color-base-black);
+            padding: 0;
+        }
+
+        &__text {
+            font: 400 35px/43.75px var(--DM-Serif-Display-ff);
+            color: var(--color-292F36);
+            letter-spacing: 0.7px;
+        }
+
+        &__text-author {
+            font: 400 25px/37.5px var(--Jost-ff);
+            color: var(--color-4D5053);
+            letter-spacing: 0.25px;
+        }
+    }
+}
