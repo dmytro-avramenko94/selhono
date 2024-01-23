@@ -6,6 +6,7 @@
 
 img {
     display: block;
+    width: 100%;
 }
 
 li {
@@ -13,13 +14,11 @@ li {
 }
 
 a {
-    color: inherit;
     text-decoration: none;
 }
 
 input,
-select,
-button {
+select {
     border: none;
     outline: none;
     background-color: transparent;
