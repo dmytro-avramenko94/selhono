@@ -18,8 +18,13 @@ a {
 }
 
 input,
-select {
+select,
+button {
     border: none;
     outline: none;
     background-color: transparent;
+}
+
+button {
+    cursor: pointer;
 }
