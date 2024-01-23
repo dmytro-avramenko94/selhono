@@ -2,137 +2,232 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--Шлях до css це відносний шлях не залежить ввід папки-->
-    <link rel="stylesheet" href="@@webRoot/bundle.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--Шлях до css це відносний шлях не залежить ввід папки-->
+  <link rel="stylesheet" href="@@webRoot/bundle.min.css">
 </head>
 
 <body>
 
-    <div class="wrapper">
+  <div class="wrapper">
 
-        <header class="header">
-            <div class="container header__container">
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__nav-container">
+          <nav class="header__nav">
+            <a href="" class="header__logo-container">
+              <img src="@@webRoot/img/header/selhono-logo.svg" alt="" class="header__logo-img">
+              <p class="header__logo-text">SELHONO</p>
+            </a>
+            <ul class="header__nav-list">
+              <li>
+                <a href="@@webRoot/index.html" class="header__nav-link">Home</a>
+              </li>
+              <li>
+                <a href="@@webRoot/pages/about.html" class="header__nav-link">Pages</a>
+              </li>
+              <li>
+                <a href="@@webRoot/pages/services.html" class="header__nav-link">Services</a>
+              </li>
+              <li>
+                <a href="@@webRoot/pages/project.html" class="header__nav-link">Project</a>
+              </li>
+              <li>
+                <a href="@@webRoot/pages/blog.html" class="header__nav-link header__nav-link--active">Blog</a>
+              </li>
+              <li>
+                <a href="@@webRoot/pages/contact.html" class="header__nav-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="" class="header__nav-search">
+            <img src="@@webRoot/img/header/search-logo.svg" alt="" class="header__nav-search-logo">
+          </a>
+        </div>
+      </div>
+    </header>
 
-            </div>
-        </header>
+    <main class="blog-page">
 
-        <main class="blog-page">
-            
-            <section class="blog-hero">
-              <div class="container blog-hero__container">
-                <h2 class="blog-hero__title">Articles& News</h2>
-              </div>
-            </section>
-    
-            <section class="lp">
-              <div class="container lp__container">
-                <div class="lp__input-wrapper">
-                  <input type="text" class="lp__input" placeholder="Search" />
-                  <button class="searck-btn">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="27"
-                      height="27"
-                      viewBox="0 0 27 27"
-                      fill="none"
-                    >
-                      <path
-                        d="M26.5881 24.2898L20.4826 18.1691C21.9525 16.2073 22.746 13.8195 22.7434 11.3659C22.7434 5.09879 17.6573 0 11.4059 0C5.1544 0 0.0683594 5.09879 0.0683594 11.3659C0.0683594 17.633 5.1544 22.7318 11.4059 22.7318C13.8533 22.7345 16.2352 21.939 18.192 20.4654L24.2975 26.5862C24.6065 26.8631 25.0096 27.011 25.424 26.9994C25.8384 26.9877 26.2326 26.8175 26.5257 26.5237C26.8188 26.2298 26.9886 25.8346 27.0002 25.4192C27.0118 25.0038 26.8643 24.5997 26.5881 24.2898ZM3.30765 11.3659C3.30765 9.76023 3.7826 8.1906 4.67244 6.85552C5.56229 5.52043 6.82705 4.47986 8.30681 3.86539C9.78657 3.25092 11.4148 3.09015 12.9857 3.4034C14.5566 3.71666 15.9996 4.48987 17.1322 5.62526C18.2647 6.76066 19.036 8.20724 19.3485 9.78208C19.6609 11.3569 19.5006 12.9893 18.8876 14.4727C18.2747 15.9562 17.2367 17.2241 15.905 18.1162C14.5732 19.0083 13.0075 19.4844 11.4059 19.4844C9.25887 19.4818 7.20056 18.6257 5.6824 17.1037C4.16425 15.5818 3.31022 13.5183 3.30765 11.3659Z"
-                        fill="currentColor"
-                      />
-                    </svg>
+      <section class="blog-hero">
+        <div class="container blog-hero__container">
+          <h2 class="blog-hero__title">Articles& News</h2>
+        </div>
+      </section>
+
+      <section class="lp">
+        <div class="container lp__container">
+          <div class="lp__input-wrapper">
+            <input type="text" class="lp__input" placeholder="Search" />
+            <button class="searck-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                <path
+                  d="M26.5881 24.2898L20.4826 18.1691C21.9525 16.2073 22.746 13.8195 22.7434 11.3659C22.7434 5.09879 17.6573 0 11.4059 0C5.1544 0 0.0683594 5.09879 0.0683594 11.3659C0.0683594 17.633 5.1544 22.7318 11.4059 22.7318C13.8533 22.7345 16.2352 21.939 18.192 20.4654L24.2975 26.5862C24.6065 26.8631 25.0096 27.011 25.424 26.9994C25.8384 26.9877 26.2326 26.8175 26.5257 26.5237C26.8188 26.2298 26.9886 25.8346 27.0002 25.4192C27.0118 25.0038 26.8643 24.5997 26.5881 24.2898ZM3.30765 11.3659C3.30765 9.76023 3.7826 8.1906 4.67244 6.85552C5.56229 5.52043 6.82705 4.47986 8.30681 3.86539C9.78657 3.25092 11.4148 3.09015 12.9857 3.4034C14.5566 3.71666 15.9996 4.48987 17.1322 5.62526C18.2647 6.76066 19.036 8.20724 19.3485 9.78208C19.6609 11.3569 19.5006 12.9893 18.8876 14.4727C18.2747 15.9562 17.2367 17.2241 15.905 18.1162C14.5732 19.0083 13.0075 19.4844 11.4059 19.4844C9.25887 19.4818 7.20056 18.6257 5.6824 17.1037C4.16425 15.5818 3.31022 13.5183 3.30765 11.3659Z"
+                  fill="currentColor" />
+              </svg>
+            </button>
+          </div>
+          <div class="lp__block">
+            <h4 class="lp__block--title">Latest Post</h4>
+            <div class="lp__block--item">
+              <img src="@@webRoot/img/blog-page/lp-img.jpg" alt="image" class="lp__img" width="650" />
+              <div class="lp__text-content">
+                <h5 class="lp__text-content--title">
+                  Low Cost Latest Invented Interior Designing Ideas
+                </h5>
+                <p class="lp__text-content--text">
+                  Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
+                  turpis dignissim maximus.posuere in.Contrary to popular
+                  belief. <br />
+                  <br />
+                  Lorem Ipsum is not simply random text. It has roots in a
+                  piece of classica.
+                </p>
+                <div class="lp__block-footer">
+                  <p class="lp__block-footer--date">26 December,2022</p>
+                  <button class="lp__block-footer--btn">
+                    <img src="@@webRoot/img/blog-page/arrow-btn.svg" alt="">
                   </button>
                 </div>
-                <div class="lp__block">
-                  <h4 class="lp__block--title">Latest Post</h4>
-                  <div class="lp__block--item">
-                    <img src="@@webRoot/img/blog-page/lp-img.jpg" alt="image" class="lp__img" width="650"/>
-                    <div class="lp__text-content">
-                      <h5 class="lp__text-content--title">
-                        Low Cost Latest Invented Interior Designing Ideas
-                      </h5>
-                      <p class="lp__text-content--text">
-                        Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
-                        turpis dignissim maximus.posuere in.Contrary to popular
-                        belief. <br />
-                        <br />
-                        Lorem Ipsum is not simply random text. It has roots in a
-                        piece of classica.
-                      </p>
-                      <div class="lp__block-footer">
-                        <p class="lp__block-footer--date">26 December,2022</p>
-                        <button class="lp__block-footer--btn">
-                            <img src="@@webRoot/img/blog-page/arrow-btn.svg" alt="">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </section>
-    
-            <section class="a-n">
-                <div class="container a-n__container">
-                    <h4 class="a-n__title">Articles & News</h4>
-                    <div class="a-n__row">
-                        <div class="a-n__item">
-                            <img src="@@webRoot/img/blog-page/articles-1.jpg" alt="" class="a-n__item--img" width="340">
-                            <h6 class="a-n__item--title">
-                                Let’s Get Solution For Building Construction Work
-                            </h6>
-                            <div class="a-n__item-footer">
-                                <p class="a-n__item-footer--date">26 December,2022</p>
-                                <button class="a-n__item-footer--btn">
-                                    <img src="@@webRoot/img/blog-page/arrow-btn.svg" alt="arrow" width="52px">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="a-n__item">
-                            <img src="@@webRoot/img/blog-page/articles-2.jpg" alt="" class="a-n__item--img" width="340">
-                            <h6 class="a-n__item--title">
-                                Let’s Get Solution For Building Construction Work
-                            </h6>
-                            <div class="a-n__item-footer">
-                                <p class="a-n__item-footer--date">26 December,2022</p>
-                                <button class="a-n__item-footer--btn">
-                                    <img src="@@webRoot/img/blog-page/arrow-btn.svg" alt="arrow" width="52px">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="a-n__item">
-                            <img src="@@webRoot/img/blog-page/articles-3.jpg" alt="" class="a-n__item--img" width="340">
-                            <h6 class="a-n__item--title">
-                                Let’s Get Solution For Building Construction Work
-                            </h6>
-                            <div class="a-n__item-footer">
-                                <p class="a-n__item-footer--date">26 December,2022</p>
-                                <button class="a-n__item-footer--btn">
-                                    <img src="@@webRoot/img/blog-page/arrow-btn.svg" alt="arrow" width="52px">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-          </main>
-
-        <footer class="footer">
-            <div class="container footer__container">
-
             </div>
-        </footer>
+          </div>
+        </div>
+      </section>
 
-    </div>
+      <section class="a-n">
+        <div class="container a-n__container">
+          <h4 class="a-n__title">Articles & News</h4>
+          <div class="a-n__row">
+            <div class="a-n__item">
+              <img src="@@webRoot/img/blog-page/articles-1.jpg" alt="" class="a-n__item--img" width="340">
+              <h6 class="a-n__item--title">
+                Let’s Get Solution For Building Construction Work
+              </h6>
+              <div class="a-n__item-footer">
+                <p class="a-n__item-footer--date">26 December,2022</p>
+                <button class="a-n__item-footer--btn">
+                  <img src="@@webRoot/img/blog-page/arrow-btn.svg" alt="arrow" width="52px">
+                </button>
+              </div>
+            </div>
+            <div class="a-n__item">
+              <img src="@@webRoot/img/blog-page/articles-2.jpg" alt="" class="a-n__item--img" width="340">
+              <h6 class="a-n__item--title">
+                Let’s Get Solution For Building Construction Work
+              </h6>
+              <div class="a-n__item-footer">
+                <p class="a-n__item-footer--date">26 December,2022</p>
+                <button class="a-n__item-footer--btn">
+                  <img src="@@webRoot/img/blog-page/arrow-btn.svg" alt="arrow" width="52px">
+                </button>
+              </div>
+            </div>
+            <div class="a-n__item">
+              <img src="@@webRoot/img/blog-page/articles-3.jpg" alt="" class="a-n__item--img" width="340">
+              <h6 class="a-n__item--title">
+                Let’s Get Solution For Building Construction Work
+              </h6>
+              <div class="a-n__item-footer">
+                <p class="a-n__item-footer--date">26 December,2022</p>
+                <button class="a-n__item-footer--btn">
+                  <img src="@@webRoot/img/blog-page/arrow-btn.svg" alt="arrow" width="52px">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__main-info">
+          <div class="footer__interno">
+            <a href="" class="footer__logo-container">
+              <img src="@@webRoot/img/footer/selhono-logo.svg" alt="selhono-logo" class="header__logo-img">
+              <p class="header__logo-text">SELHONO</p>
+            </a>
+            <p class="footer__interno-text">It is a long established fact that a reader will be distracted
+              lookings.</p>
+            <div class="footer__social-container">
+              <a href="" class="footer__social-link">
+                <img src="@@webRoot/img/footer/facebook-icon.svg" alt="facebook-icon" class="footer__social-icon">
+              </a>
+              <a href="" class="footer__social-link">
+                <img src="@@webRoot/img/footer/twitter-icon.svg" alt="twitter-icon" class="footer__social-icon">
+              </a>
+              <a href="" class="footer__social-link">
+                <img src="@@webRoot/img/footer/linkedin-icon.svg" alt="linkedin-icon" class="footer__social-icon">
+              </a>
+              <a href="" class="footer__social-link">
+                <img src="@@webRoot/img/footer/instagram-icon.svg" alt="instagram-icon" class="footer__social-icon">
+              </a>
+            </div>
+          </div>
+          <div class="footer__pages-container">
+            <p class="footer__block-title">Pages</p>
+            <ul class="footer__pages-list">
+              <li>
+                <a href="@@webRoot/pages/about.html" class="footer__link">About Us</a>
+              </li>
+              <li>
+                <a href="@@webRoot/pages/project.html" class="footer__link">Our Projects</a>
+              </li>
+              <li>
+                <a href="@@webRoot/pages/team.html" class="footer__link">Our Team</a>
+              </li>
+              <li>
+                <a href="@@webRoot/pages/contact.html" class="footer__link">Contact Us</a>
+              </li>
+              <li>
+                <a href="@@webRoot/pages/services.html" class="footer__link">Services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__services-container">
+            <p class="footer__block-title">Services</p>
+            <ul class="footer__services-list">
+              <li>
+                <a href="" class="footer__link">Kitchan</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">Living Area</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">Bathroom</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">Dinning Hall</a>
+              </li>
+              <li>
+                <a href="" class="footer__link">Bedroom</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contact-container">
+            <p class="footer__block-title">Contact</p>
+            <div class="footer__contact-info">
+              <p class="footer__contact-info-text">55 East Birchwood Ave. Brooklyn, New York 11201</p>
+              <p class="footer__contact-info-text">contact@selhono.com</p>
+              <p class="footer__contact-info-text">(123) 456-7890</p>
+            </div>
+          </div>
+        </div>
+        <p class="footer__copyright">Copyright © SELHONO </p>
+      </div>
+    </footer>
+
+  </div>
 
 
-    <!--Обовязково додавати потрібно для JS -->
-    <script> var exports = {}; </script>
-    <script src="@@webRoot/js/index.js"></script>
+  <!--Обовязково додавати потрібно для JS -->
+  <script> var exports = {}; </script>
+  <script src="@@webRoot/js/index.js"></script>
 </body>
 
 </html>
