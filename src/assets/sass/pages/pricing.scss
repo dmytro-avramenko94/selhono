@@ -1,0 +1,90 @@
+.pricing-page {
+
+    .hero {
+        &__container {
+            padding: 178px 0 90px 0;
+            margin-bottom: 119px;
+            text-align: center;
+            background-image: url("../../img/pricing/hero-img.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &__title {
+            font: var(--page-title-font);
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: var(--color-base-white);
+        }
+    }
+
+    .price {
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            gap: 48px;
+            margin-bottom: 200px;
+        }
+
+        &__item {
+            display: grid;
+            grid-template-rows: 38px 115px 50px 45px 270px 75px;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover {
+                .price__item-btn-plans {
+                    background-color: var(--color-CDA274);
+                }
+
+                .price__item-btn {
+                    background-color: var(--color-CDA274);
+                }
+            }
+        }
+
+        &__item-title {
+            font: 400 25px/27.5px var(--DM-Serif-Display-ff);
+            letter-spacing: 0.25px;
+            color: var(--color-292F36);
+        }
+
+        &__item-amount {
+            font: 400 85px/127.5px var(--DM-Serif-Display-ff);
+            letter-spacing: 0.85px;
+            color: var(--color-292F36);
+        }
+
+        .sub-font {
+            font: 400 25px/27.5px var(--DM-Serif-Display-ff);
+            letter-spacing: 0.25px;
+            color: var(--color-292F36);
+        }
+
+        &__item-period {
+            padding-bottom: 22px;
+        }
+
+        &__item-btn-plans {
+            font: var(--read-more-button-font);
+            letter-spacing: 0.36px;
+            color: var(--color-base-white);
+            padding: 10px 38px;
+            max-width: 240px;
+            justify-self: center;
+            background-color: var(--color-base-white);
+        }
+
+        &__item-description {
+            font: 400 20px/50px var(--Jost-ff);
+            letter-spacing: 0.2px;
+            color: var(--color-4D5053);
+            padding-bottom: 28px;
+            max-width: 250px;
+        }
+
+        &__item-btn {
+            justify-content: center;
+        }
+    }
+}
