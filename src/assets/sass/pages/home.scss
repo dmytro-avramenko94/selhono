@@ -1,6 +1,7 @@
 // Hero section
 
 .home-page {
+
   .hero {
     padding-top: 88px;
     padding-bottom: 95px;
@@ -240,6 +241,14 @@
   .partners__row {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1142px) {
+      flex-wrap: wrap;
+    }
+
+    &--item {
+      width: 100%;
+    }
   }
 
   // Partners section END
@@ -368,6 +377,7 @@
     display: flex;
     flex-direction: column;
     gap: 130px;
+    padding: 0;
   }
 
   .articles__title-block {
@@ -395,7 +405,9 @@
 
   .articles-row {
     display: flex;
-    gap: 27px;
+    justify-content: space-between;
+    // gap: 27px;
+    flex-wrap: wrap;
   }
 
   .articles-item {
