@@ -206,6 +206,7 @@
   }
 
   &--btn {
+    display: inline-block;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -214,8 +215,6 @@
 // WLD section END
 
 // SS-succes section
-
-// Success section
 
 .ss-success {
   padding-bottom: 300px;
@@ -253,7 +252,5 @@
 .success__text {
   letter-spacing: 0.22px;
 }
-
-// Success section END
 
 // SS-succes section END
