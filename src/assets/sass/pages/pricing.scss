@@ -21,7 +21,7 @@
         &__container {
             display: grid;
             grid-template-columns: repeat(3, 250px);
-            gap: 48px;
+            justify-content: space-evenly;
             margin-bottom: 200px;
         }
 
