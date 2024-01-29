@@ -51,7 +51,31 @@
         </header>
 
         <main class="faq-page">
+            <section class="hero">
+                <div class="hero__container">
+                    <h3 class="hero__title">FAQ’s</h3>
+                </div>
+            </section>
 
+            <section class="eqa">
+                <div class="eqa__container container">
+                    <h3 class="eqa__title">Every Question Answered</h3>
+                    <div class="eqa__content">
+                        <div class="eqa__accordion">
+                            <button class="eqa__accordion-btn">
+                                <h4 class="eqa__content-item-title">What is the Hipcouch Interior Design Service?</h4>
+                                <img src="@@webRoot/img/faq/acordion-inactive.svg" alt="Accordion incon"
+                                    class="eqa__content-item-img">
+                            </button>
+                            <p class="eqa__accordion-text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem
+                                vitae turpmaximus.posuere in.Contrary popular belief.
+                                There are many variations of passages of Lorem Ipsum available, but the majority
+                                randomised.</p>
+                        </div>
+                        <img src="@@webRoot/img/faq/eqa-img.jpg" alt="Image class=" eqa__img">
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
@@ -142,7 +166,18 @@
 
     <!--Обовязково додавати потрібно для JS -->
     <script> var exports = {}; </script>
-    <script src="@@webRoot/js/index.js"></script>
+    <script src="@@webRoot/js/index.js">
+
+        const accordionBtn = document.querySelector('.eqa__accordion-btn')
+        const accordionActive = document.querySelector('.eqa__accordion-text')
+
+        accordionBtn.addEventListener('click', () => {
+            accordionActive.classList.toggle('accordion-active')
+        })
+
+
+
+    </script>
 </body>
 
 </html>
