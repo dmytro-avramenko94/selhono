@@ -70,24 +70,6 @@
 
 // Trends section END
 
-// Partners section
-
-.partners__row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 210px;
-
-  @media (max-width: 1142px) {
-    flex-wrap: wrap;
-  }
-
-  &--item {
-    width: 100%;
-  }
-}
-
-// Partners section END
-
 // SS-video section
 
 .ss-video {
@@ -213,44 +195,3 @@
 }
 
 // WLD section END
-
-// SS-succes section
-
-.ss-success {
-  padding-bottom: 300px;
-  align-items: center;
-}
-
-.success__container {
-  max-width: 1082px;
-  padding: 0;
-}
-
-.success__row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.success__item {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  position: relative;
-  padding-right: 54px;
-  border-right: 1px solid var(--color-CDA274);
-}
-
-.success__item:last-child {
-  border-right: none;
-}
-
-.success__number {
-  font: var(--big-numbers-font);
-  color: var(--color-CDA274);
-}
-
-.success__text {
-  letter-spacing: 0.22px;
-}
-
-// SS-succes section END
